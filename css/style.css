@@ -1,0 +1,134 @@
+img {
+    display:block;
+    width:24px;
+    height:auto;
+}
+
+.container {
+    width: 300px;
+    clear: both;
+}
+.container input , button{
+    width: 100%;
+    clear: both;
+    margin: 5px;
+}
+
+.velky {
+    font-size: 30px;
+}
+
+#width_limit {
+    width: 600px;
+}
+
+table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin: 10px;
+    width: 100%;
+}
+
+
+
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #99bbff;
+    color: white;
+}
+
+
+
+#mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9000;
+    background-color: #000;
+    display: none;
+}
+
+#boxes .window {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 440px;
+    height: 200px;
+    display: none;
+    z-index: 9999;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#boxes #dialog {
+    width: 750px;
+    height: 300px;
+    padding: 10px;
+    background-color: #ffffff;
+    font-family: 'Segoe UI Light', sans-serif;
+    font-size: 15pt;
+}
+
+#popupfoot {
+    font-size: 16pt;
+    position: absolute;
+    bottom: 0px;
+    width: 250px;
+    left: 250px;
+}
+
+.report-container {
+    border: #747474 2px solid;
+    border-radius: 10px;
+    width: 600px;
+    padding: 20px 40px 40px 40px;
+    margin: 0;
+    color: #000000;
+}
+
+.weather-icon {
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.weather-forecast {
+    color: #212121;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+span.min-temperature {
+    margin-left: 15px;
+    color: #929292;
+}
+
+.time {
+    line-height: 25px;
+}
+
+.pretty {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin: 30px;
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.pretty:hover {
+    background-color: #ddd;
+}
