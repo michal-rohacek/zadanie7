@@ -19,7 +19,7 @@ function increment_counter() {
 
         $db = initDBConnection();
 
-        $page_name = $_POST['page_name'];
+        $page_name = $db->qstr($_POST['page_name']);
 
         $query_insert_visit = "UPDATE counters SET counter = counter + 1 where page_name = '$page_name'";
         $result = $db->Execute($query_insert_visit)  or die ("Chyba v query: $query_insert_visit " . $db->ErrorMsg());
@@ -31,7 +31,7 @@ function get_cities()  {
 
         $db = initDBConnection();
 
-        $country_code = $_POST['country_code'];
+        $country_code = $db->qstr($_POST['country_code']);
 
         $query_visits_by_city = "SELECT city, count(*) as count FROM `users` WHERE country_code = '$country_code' group by city";
         $query_result_set = $db->Execute($query_visits_by_city) or die ("Chyba v query: $query_visits_by_city " . $db->ErrorMsg());
